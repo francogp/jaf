@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jakarta.activation-api" />
+        <module name="demo" />
+        <module name="jakarta.activation" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="all" target="9" />
+      <module name="demo" target="9" />
+      <module name="jakarta.activation" target="9" />
+      <module name="jakarta.activation-api" target="9" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-Xlint:all -Xlint:-rawtypes -Xlint:-unchecked -Xlint:-finally" />
+      <module name="jakarta.activation" options="-Xlint:all -Xlint:-rawtypes -Xlint:-unchecked -Xlint:-finally" />
+      <module name="jakarta.activation-api" options="-Xlint:all -Xlint:-rawtypes -Xlint:-unchecked -Xlint:-finally" />
+    </option>
+  </component>
+</project>
